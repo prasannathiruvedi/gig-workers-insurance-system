@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d9488" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>GigShield — Income protection for gig workers</title>
+  </head>
+  <body>
+    <div id="root">
+      <p style="margin: 0; padding: 1.25rem; font-family: system-ui, sans-serif; color: #334155">
+        Loading GigShield…
+      </p>
+    </div>
+    <noscript>Enable JavaScript to run this app.</noscript>
+    <!-- Opening index.html as file:// will never load Vite; boot the app only over http(s) -->
+    <script>
+      (function () {
+        if (location.protocol === "file:") {
+          document.getElementById("root").innerHTML =
+            '<div style="padding:1.5rem;font-family:system-ui,sans-serif;line-height:1.5;max-width:40rem;color:#0f172a">' +
+            "<h1 style=\"margin-top:0\">GigShield can’t run from a saved file</h1>" +
+            "<p>Browsers block ES modules on <code>file://</code>. Use the dev server:</p>" +
+            "<ol><li><code>cd</code> into the <code>frontend</code> folder</li>" +
+            "<li>Run <code>npm run dev</code></li>" +
+            "<li>Open the URL shown (try <code>http://127.0.0.1:5173/</code>)</li></ol>" +
+            "<p style=\"color:#64748b;font-size:0.9rem\">If the tab keeps spinning, use <strong>127.0.0.1</strong> instead of <strong>localhost</strong>.</p>" +
+            "</div>";
+          return;
+        }
+        var s = document.createElement("script");
+        s.type = "module";
+        s.src = "/src/main.jsx";
+        s.onerror = function () {
+          document.getElementById("root").innerHTML =
+            '<p style="padding:1.5rem;font-family:system-ui;color:#b91c1c">Failed to load app script. Is <code>npm run dev</code> running?</p>';
+        };
+        document.body.appendChild(s);
+      })();
+    </script>
+  </body>
+</html>
