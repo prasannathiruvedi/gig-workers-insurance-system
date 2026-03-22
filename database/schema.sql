@@ -1,0 +1,1 @@
+-- Placeholder: SQL DDL for gig-workers-insurance-system.
