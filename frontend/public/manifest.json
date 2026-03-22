@@ -1,0 +1,7 @@
+{
+  "name": "Gig Workers Insurance",
+  "short_name": "GWI",
+  "start_url": ".",
+  "display": "standalone",
+  "_placeholder": "Expand PWA fields as the app grows."
+}

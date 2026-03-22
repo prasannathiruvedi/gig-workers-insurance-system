@@ -1,0 +1,1 @@
+// Placeholder: alert banner component.
