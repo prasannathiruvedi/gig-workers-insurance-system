@@ -1,0 +1,22 @@
+{
+  "name": "gig-workers-insurance-system",
+  "version": "1.0.0",
+  "description": "Node.js backend for an AI-powered parametric insurance system that automatically triggers payouts based on environmental events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasannathiruvedi/gig-workers-insurance-system.git"
+  },
+  "author": "Prasanna Thiruvedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasannathiruvedi/gig-workers-insurance-system/issues"
+  },
+  "homepage": "https://github.com/prasannathiruvedi/gig-workers-insurance-system#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
